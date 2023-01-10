@@ -13,14 +13,9 @@ def minOperations(n: int) -> int:
     in the file"""
     process = 2
     op = 0
-    if (n == None or n < 0):
-        return 0
-    elif (n == 1):
-        return 1
-    elif (n > 1):
-        while (n > 1):
-            while n % process == 0:
-                op += process
-                n /= process
-            process += 1
-        return op
+    while n > 1:
+        while n % process == 0:
+            op += process
+            n /= process
+        process += 1
+    return op
