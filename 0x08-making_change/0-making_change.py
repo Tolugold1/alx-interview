@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 """Function that returns fewest number of
 that makes up the total coin.
 """
