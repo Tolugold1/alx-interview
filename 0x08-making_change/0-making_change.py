@@ -5,10 +5,9 @@ that makes up the total coin.
 
 
 def makeChange(coins, total):
-  """return fewest coin"""
-  if (total <= 0):
-    return 0
-  else:
+    """return fewest coin"""
+    if total < 1:
+      return 0
     needed_coin = 0
     coins.sort()
     coins.reverse()
@@ -21,6 +20,3 @@ def makeChange(coins, total):
     if total != 0:
       return -1
     return needed_coin
-
-
-print(makeChange([1256, 54, 48, 16, 102], 1453))
